@@ -4,7 +4,17 @@
     "verifiedBy": "AI 작성 — 확립된 표준 세계사 서술 기반. 이번 배치는 세션 WebSearch 예산 소진으로 실시간 검색 검증 없이 작성 (2026-09-02).",
     "sourceOutline": "500_01.txt 1~110번 (1~3부: 선사시대~고대 제국들의 번영과 종교)",
     "count": 90,
-    "totalCount": 470
+    "totalCount": 470,
+    "factCheck": {
+      "method": "지식 기반 수동 검토 (fork, 1~3부 84개) — WebSearch 예산이 세션 시작 시점부터 이미 소진(0/200 가용)돼 실시간 검색 검증은 수행하지 못함",
+      "verifiedCount": 0,
+      "reviewedCount": 84,
+      "totalCount": 470,
+      "lastUpdated": "2026-09-01",
+      "errorsFoundAndFixed": 0,
+      "fixedIds": [],
+      "note": "1~3부(선사시대~고대 제국들의 번영과 종교) 84개를 AI 지식 기반으로 정독 검토함 — 날짜, 인명, 인과관계, 통계를 훑었으나 확신을 갖고 수정할 만한 오류는 발견하지 못했음(기존에 이미 표준적인 학설 위주로 신중하게 작성되어 있었고, 불확실한 부분은 이미 \"논쟁\"/\"불확실\" 등으로 적절히 헤지되어 있음). 이는 WebSearch 기반 실시간 검증이 아니므로 verifiedCount는 0으로 유지 — 진짜 WebSearch 검증은 예산이 회복된 다음 세션에서 다시 수행 필요. 나머지 4~7부+인물+narrative보강+gapfill 386개는 이번 검토에서도 다루지 않음."
+    }
   },
   "topics": [
     {
