@@ -1,0 +1,77 @@
+import { View, TouchableOpacity, ScrollView, StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native';
+import AppText from '../components/AppText';
+import { useFontScale, FONT_SCALE_LEVELS } from '../content/useFontScale';
+
+export default function SettingsScreen({ navigation }) {
+  const { levelKey, setLevelKey, loaded } = useFontScale();
+
+  return (
+    <SafeAreaView style={s.safe}>
+      <View style={s.header}>
+        <TouchableOpacity onPress={() => navigation.goBack()} style={s.backBtn}>
+          <AppText style={s.backText}>← 홈</AppText>
+        </TouchableOpacity>
+      </View>
+
+      <ScrollView contentContainerStyle={s.scroll}>
+        <AppText style={s.badge}>⚙️ 설정</AppText>
+        <AppText style={s.title}>글자 크기</AppText>
+        <AppText style={s.subtitle}>화면의 모든 글자 크기를 한 번에 바꿀 수 있어요.</AppText>
+
+        {FONT_SCALE_LEVELS.map((level) => {
+          const selected = level.key === levelKey;
+          return (
+            <TouchableOpacity
+              key={level.key}
+              style={[s.optionCard, selected && s.optionCardSelected]}
+              activeOpacity={0.85}
+              disabled={!loaded}
+              onPress={() => setLevelKey(level.key)}
+            >
+              <View style={s.optionTextWrap}>
+                <AppText style={[s.optionLabel, { fontSize: 17 * level.scale }]}>
+                  {level.label}
+                </AppText>
+                <AppText style={s.optionSample}>가나다 ABC 123 — 세계사 한입</AppText>
+              </View>
+              {selected && <AppText style={s.checkMark}>✓</AppText>}
+            </TouchableOpacity>
+          );
+        })}
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+const s = StyleSheet.create({
+  safe: {
+    flex: 1,
+    backgroundColor: '#eef2f4',
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+  },
+  header: { paddingHorizontal: 20, paddingTop: 12, paddingBottom: 8 },
+  backBtn: { paddingVertical: 8, paddingHorizontal: 4, alignSelf: 'flex-start' },
+  backText: { fontSize: 17, fontWeight: '700', color: '#2c5f7c' },
+
+  scroll: { padding: 20, paddingBottom: 48 },
+  badge: { fontSize: 14, fontWeight: '700', color: '#2c5f7c', marginBottom: 8 },
+  title: { fontSize: 28, fontWeight: '800', color: '#1f2d33' },
+  subtitle: { fontSize: 15, color: '#66767d', marginTop: 8, marginBottom: 24 },
+
+  optionCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#f7fafb',
+    borderRadius: 16,
+    borderWidth: 2,
+    borderColor: '#d7e0e3',
+    padding: 18,
+    marginBottom: 14,
+  },
+  optionCardSelected: { borderColor: '#b8912f', backgroundColor: '#fdf9ef' },
+  optionTextWrap: { flex: 1 },
+  optionLabel: { fontWeight: '800', color: '#1f2d33', marginBottom: 6 },
+  optionSample: { fontSize: 15, color: '#66767d' },
+  checkMark: { fontSize: 22, fontWeight: '800', color: '#b8912f', marginLeft: 12 },
+});

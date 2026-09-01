@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "세계사",
+    "description": "세계사 한입 — 하루 한 조각, 듣고 배우는 세계사",
+    "slug": "whistory",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#e8eef2",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.forwinning.whistory"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
