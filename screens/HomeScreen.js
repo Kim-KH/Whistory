@@ -2,12 +2,15 @@ import { useMemo, useState } from 'react';
 import { View, TextInput, TouchableOpacity, FlatList, StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native';
 import AppText from '../components/AppText';
 import { TOPIC_CATEGORIES, getTopicsByCategory, searchTopics, getTotalTopicCount } from '../content/registry';
+import { useHotCornerItems } from '../content/useHotCorner';
 
 export default function HomeScreen({ navigation }) {
   const [query, setQuery] = useState('');
   const q = query.trim();
   const isSearching = q !== '';
   const searchResults = useMemo(() => searchTopics(q), [q]);
+  const { items: hotCornerItems } = useHotCornerItems();
+  const latestHotCorner = hotCornerItems[0];
 
   return (
     <SafeAreaView style={s.safe}>
@@ -50,15 +53,33 @@ export default function HomeScreen({ navigation }) {
             </View>
 
             {!isSearching && (
-              <TouchableOpacity
-                style={s.quizCard}
-                onPress={() => navigation.navigate('QuizHome')}
-                activeOpacity={0.85}
-              >
-                <AppText style={s.quizBadge}>📝 문제풀이</AppText>
-                <AppText style={s.quizTitle}>세계사 예상문제 풀어보기</AppText>
-                <AppText style={s.quizDesc}>기본·심화 난이도 · 오답노트 자동 저장</AppText>
-              </TouchableOpacity>
+              <>
+                <TouchableOpacity
+                  style={s.hotCard}
+                  onPress={() => navigation.navigate('HotCornerList')}
+                  activeOpacity={0.85}
+                >
+                  <AppText style={s.hotBadge}>🔥 핫코너 · {hotCornerItems.length}개</AppText>
+                  {latestHotCorner && (
+                    <>
+                      <AppText style={s.hotTitle}>
+                        {latestHotCorner.movieFacts?.title || latestHotCorner.issueFacts?.title}
+                      </AppText>
+                      <AppText style={s.hotDesc} numberOfLines={2}>{latestHotCorner.trigger}</AppText>
+                    </>
+                  )}
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                  style={s.quizCard}
+                  onPress={() => navigation.navigate('QuizHome')}
+                  activeOpacity={0.85}
+                >
+                  <AppText style={s.quizBadge}>📝 문제풀이</AppText>
+                  <AppText style={s.quizTitle}>세계사 예상문제 풀어보기</AppText>
+                  <AppText style={s.quizDesc}>기본·심화 난이도 · 오답노트 자동 저장</AppText>
+                </TouchableOpacity>
+              </>
             )}
 
             <AppText style={s.sectionTitle}>
@@ -141,6 +162,16 @@ const s = StyleSheet.create({
   searchIcon: { fontSize: 16, marginRight: 8 },
   searchInput: { flex: 1, paddingVertical: 12, fontSize: 16, color: '#1f2d33' },
   clearIcon: { fontSize: 16, color: '#8a9aa1', paddingLeft: 8 },
+
+  hotCard: {
+    backgroundColor: '#b8562c',
+    borderRadius: 16,
+    padding: 18,
+    marginBottom: 20,
+  },
+  hotBadge: { fontSize: 14, fontWeight: '700', color: '#f6dcc9' },
+  hotTitle: { fontSize: 19, fontWeight: '800', color: '#fff8f2', marginTop: 6, lineHeight: 26 },
+  hotDesc: { fontSize: 14, color: '#f6dcc9', marginTop: 8, lineHeight: 20 },
 
   quizCard: {
     backgroundColor: '#2c5f7c',

@@ -5,6 +5,8 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { FontScaleProvider } from './content/useFontScale';
 import HomeScreen from './screens/HomeScreen';
 import SettingsScreen from './screens/SettingsScreen';
+import HotCornerListScreen from './screens/HotCornerListScreen';
+import HotCornerDetailScreen from './screens/HotCornerDetailScreen';
 import TopicListScreen from './screens/TopicListScreen';
 import TopicDetailScreen from './screens/TopicDetailScreen';
 import QuizHomeScreen from './screens/QuizHomeScreen';
@@ -22,6 +24,8 @@ export default function App() {
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Home" component={HomeScreen} />
             <Stack.Screen name="Settings" component={SettingsScreen} />
+            <Stack.Screen name="HotCornerList" component={HotCornerListScreen} />
+            <Stack.Screen name="HotCornerDetail" component={HotCornerDetailScreen} />
             <Stack.Screen name="TopicList" component={TopicListScreen} />
             <Stack.Screen name="TopicDetail" component={TopicDetailScreen} />
             <Stack.Screen name="QuizHome" component={QuizHomeScreen} />
