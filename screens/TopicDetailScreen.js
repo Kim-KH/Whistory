@@ -157,59 +157,59 @@ export default function TopicDetailScreen({ route, navigation }) {
 const s = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#eef2f4',
+    backgroundColor: '#f3ecdc',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0 },
-  notFound: { fontSize: 18, color: '#1f2d33', padding: 24 },
+  notFound: { fontSize: 18, color: '#2b2118', padding: 24 },
 
   header: {
     flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',
     paddingHorizontal: 20, paddingTop: 12, paddingBottom: 8 },
   backBtn: { paddingVertical: 8, paddingHorizontal: 4 },
-  backText: { fontSize: 17, fontWeight: '700', color: '#2c5f7c' },
+  backText: { fontSize: 17, fontWeight: '700', color: '#a8471f' },
   listenBtn: {
-    backgroundColor: '#2c5f7c', borderRadius: 22,
+    backgroundColor: '#2f6b76', borderRadius: 22,
     paddingVertical: 10, paddingHorizontal: 18 },
-  listenBtnActive: { backgroundColor: '#1e4054' },
-  listenText: { color: '#f7fafb', fontSize: 16, fontWeight: '700' },
+  listenBtnActive: { backgroundColor: '#1f4e57' },
+  listenText: { color: '#fff8ee', fontSize: 16, fontWeight: '700' },
 
   scroll: { padding: 24, paddingBottom: 56 },
 
   categoryBadge: {
     alignSelf: 'flex-start',
-    backgroundColor: '#2c5f7c', borderRadius: 20,
+    backgroundColor: '#2f6b76', borderRadius: 20,
     paddingVertical: 5, paddingHorizontal: 14, marginBottom: 12 },
-  categoryText: { color: '#f7fafb', fontWeight: '700', fontSize: 14 },
-  name: { fontSize: 34, fontWeight: '800', color: '#1f2d33' },
-  era: { fontSize: 18, fontWeight: '700', color: '#2c5f7c', marginTop: 8 },
+  categoryText: { color: '#fff8ee', fontWeight: '700', fontSize: 14 },
+  name: { fontSize: 34, fontWeight: '800', color: '#2b2118' },
+  era: { fontSize: 18, fontWeight: '700', color: '#2f6b76', marginTop: 8 },
   starsBig: { fontSize: 17, color: '#b8912f', letterSpacing: 2, marginTop: 8 },
 
   introRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 10, marginTop: 20 },
-  oneLiner: { flex: 1, fontSize: 20, color: '#1f2d33', lineHeight: 29, fontWeight: '600' },
+  oneLiner: { flex: 1, fontSize: 20, color: '#2b2118', lineHeight: 29, fontWeight: '600' },
 
-  divider: { height: 1, backgroundColor: '#d7e0e3', marginVertical: 26 },
+  divider: { height: 1, backgroundColor: '#e2d6bc', marginVertical: 26 },
 
-  blockTitle: { fontSize: 15, fontWeight: '700', color: '#2c5f7c', textTransform: 'uppercase', letterSpacing: 0.5 },
+  blockTitle: { fontSize: 15, fontWeight: '700', color: '#2f6b76', textTransform: 'uppercase', letterSpacing: 0.5 },
   blockHeadRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 },
 
   stageLabelRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   stageNumber: {
-    fontSize: 13, fontWeight: '800', color: '#f7fafb', backgroundColor: '#b8912f',
+    fontSize: 13, fontWeight: '800', color: '#fff8ee', backgroundColor: '#b8912f',
     width: 22, height: 22, borderRadius: 11, textAlign: 'center', lineHeight: 22, overflow: 'hidden' },
-  narrativeText: { fontSize: 18, color: '#1f2d33', lineHeight: 28, marginBottom: 6 },
+  narrativeText: { fontSize: 18, color: '#2b2118', lineHeight: 28, marginBottom: 6 },
 
   factRow: { flexDirection: 'row', alignItems: 'flex-start', marginBottom: 14, gap: 10 },
   factBullet: { fontSize: 19, color: '#b8912f', lineHeight: 27 },
-  factText: { flex: 1, fontSize: 18, color: '#1f2d33', lineHeight: 27 },
+  factText: { flex: 1, fontSize: 18, color: '#2b2118', lineHeight: 27 },
 
   chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginTop: 14 },
   chip: {
-    backgroundColor: '#e2ecf0', borderRadius: 20,
+    backgroundColor: '#efe4cc', borderRadius: 20,
     paddingVertical: 10, paddingHorizontal: 16 },
-  chipText: { fontSize: 14, fontWeight: '700', color: '#2c5f7c' },
+  chipText: { fontSize: 14, fontWeight: '700', color: '#2f6b76' },
 
   segBtn: {
     width: 34, height: 34, borderRadius: 17,
-    backgroundColor: '#e2ecf0',
+    backgroundColor: '#efe4cc',
     alignItems: 'center', justifyContent: 'center',
     flexShrink: 0 },
   segBtnText: { fontSize: 15 } });

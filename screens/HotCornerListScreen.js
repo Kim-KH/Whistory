@@ -57,25 +57,25 @@ export default function HotCornerListScreen({ navigation }) {
 const s = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#eef2f4',
+    backgroundColor: '#f3ecdc',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0 },
   header: { paddingHorizontal: 20, paddingTop: 12, paddingBottom: 8 },
   backBtn: { paddingVertical: 8, paddingHorizontal: 4, alignSelf: 'flex-start' },
-  backText: { fontSize: 17, fontWeight: '700', color: '#2c5f7c' },
+  backText: { fontSize: 17, fontWeight: '700', color: '#a8471f' },
 
   listContent: { padding: 20, paddingBottom: 48 },
-  badge: { fontSize: 14, fontWeight: '700', color: '#b8562c', marginBottom: 8 },
-  pageTitle: { fontSize: 30, fontWeight: '800', color: '#1f2d33' },
-  pageSub: { fontSize: 15, color: '#66767d', marginTop: 8, marginBottom: 20 },
+  badge: { fontSize: 14, fontWeight: '700', color: '#a83c32', marginBottom: 8 },
+  pageTitle: { fontSize: 30, fontWeight: '800', color: '#2b2118' },
+  pageSub: { fontSize: 15, color: '#7a6f5d', marginTop: 8, marginBottom: 20 },
 
   card: {
-    backgroundColor: '#f7fafb',
+    backgroundColor: '#faf6ec',
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: '#d7e0e3',
+    borderColor: '#e2d6bc',
     padding: 18,
     marginBottom: 14 },
   cardDate: { fontSize: 13, fontWeight: '700', color: '#b8912f', marginBottom: 6 },
-  cardTitle: { fontSize: 21, fontWeight: '800', color: '#1f2d33', lineHeight: 28 },
-  cardTrigger: { fontSize: 14, color: '#b8562c', marginTop: 8, lineHeight: 20 },
-  cardSummary: { fontSize: 15, color: '#4a5a61', marginTop: 8, lineHeight: 22 } });
+  cardTitle: { fontSize: 21, fontWeight: '800', color: '#2b2118', lineHeight: 28 },
+  cardTrigger: { fontSize: 14, color: '#a83c32', marginTop: 8, lineHeight: 20 },
+  cardSummary: { fontSize: 15, color: '#5a5142', marginTop: 8, lineHeight: 22 } });

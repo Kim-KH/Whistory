@@ -40,7 +40,7 @@ export default function HomeScreen({ navigation }) {
               <TextInput
                 style={s.searchInput}
                 placeholder="시대, 사건, 인물로 검색 (예: 르네상스, 나폴레옹)"
-                placeholderTextColor="#8a9aa1"
+                placeholderTextColor="#a8997a"
                 value={query}
                 onChangeText={setQuery}
                 returnKeyType="search"
@@ -136,83 +136,83 @@ export default function HomeScreen({ navigation }) {
 const s = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#eef2f4',
+    backgroundColor: '#f3ecdc',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   listContent: { padding: 20, paddingBottom: 48 },
 
   titleRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' },
   titleTextWrap: { flex: 1 },
-  appTitle: { fontSize: 32, fontWeight: '800', color: '#1f2d33', marginTop: 8 },
-  appSubtitle: { fontSize: 16, color: '#66767d', marginTop: 6, marginBottom: 18 },
+  appTitle: { fontSize: 32, fontWeight: '800', color: '#2b2118', marginTop: 8 },
+  appSubtitle: { fontSize: 16, color: '#7a6f5d', marginTop: 6, marginBottom: 18 },
   settingsBtn: {
     marginTop: 8,
     width: 44, height: 44, borderRadius: 22,
-    backgroundColor: '#f7fafb', borderWidth: 1, borderColor: '#d7e0e3',
+    backgroundColor: '#faf6ec', borderWidth: 1, borderColor: '#e2d6bc',
     alignItems: 'center', justifyContent: 'center',
   },
   settingsIcon: { fontSize: 18, fontWeight: '800', color: '#b8912f' },
 
   searchBox: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: '#f7fafb', borderRadius: 16,
-    borderWidth: 1, borderColor: '#d7e0e3',
+    backgroundColor: '#faf6ec', borderRadius: 16,
+    borderWidth: 1, borderColor: '#e2d6bc',
     paddingHorizontal: 14, marginBottom: 18,
   },
   searchIcon: { fontSize: 16, marginRight: 8 },
-  searchInput: { flex: 1, paddingVertical: 12, fontSize: 16, color: '#1f2d33' },
-  clearIcon: { fontSize: 16, color: '#8a9aa1', paddingLeft: 8 },
+  searchInput: { flex: 1, paddingVertical: 12, fontSize: 16, color: '#2b2118' },
+  clearIcon: { fontSize: 16, color: '#a8997a', paddingLeft: 8 },
 
   hotCard: {
-    backgroundColor: '#b8562c',
+    backgroundColor: '#a83c32',
     borderRadius: 16,
     padding: 18,
     marginBottom: 20,
   },
-  hotBadge: { fontSize: 14, fontWeight: '700', color: '#f6dcc9' },
-  hotTitle: { fontSize: 19, fontWeight: '800', color: '#fff8f2', marginTop: 6, lineHeight: 26 },
-  hotDesc: { fontSize: 14, color: '#f6dcc9', marginTop: 8, lineHeight: 20 },
+  hotBadge: { fontSize: 14, fontWeight: '700', color: '#fff8ee' },
+  hotTitle: { fontSize: 19, fontWeight: '800', color: '#fff8ee', marginTop: 6, lineHeight: 26 },
+  hotDesc: { fontSize: 14, color: '#fff8ee', marginTop: 8, lineHeight: 20 },
 
   quizCard: {
-    backgroundColor: '#2c5f7c',
+    backgroundColor: '#2f6b76',
     borderRadius: 16,
     padding: 18,
     marginBottom: 20,
   },
-  quizBadge: { fontSize: 14, fontWeight: '700', color: '#cfe3ec' },
-  quizTitle: { fontSize: 19, fontWeight: '800', color: '#f7fafb', marginTop: 6 },
-  quizDesc: { fontSize: 14, color: '#cfe3ec', marginTop: 4 },
+  quizBadge: { fontSize: 14, fontWeight: '700', color: '#fff8ee' },
+  quizTitle: { fontSize: 19, fontWeight: '800', color: '#fff8ee', marginTop: 6 },
+  quizDesc: { fontSize: 14, color: '#fff8ee', marginTop: 4 },
 
-  sectionTitle: { fontSize: 18, fontWeight: '800', color: '#1f2d33', marginBottom: 4 },
-  sectionSub: { fontSize: 14, color: '#66767d', marginBottom: 14 },
-  emptyText: { fontSize: 16, color: '#66767d', marginTop: 20, textAlign: 'center' },
+  sectionTitle: { fontSize: 18, fontWeight: '800', color: '#2b2118', marginBottom: 4 },
+  sectionSub: { fontSize: 14, color: '#7a6f5d', marginBottom: 14 },
+  emptyText: { fontSize: 16, color: '#7a6f5d', marginTop: 20, textAlign: 'center' },
 
   categoryCard: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: '#f7fafb', borderRadius: 14,
-    borderWidth: 1, borderColor: '#d7e0e3',
+    backgroundColor: '#faf6ec', borderRadius: 14,
+    borderWidth: 1, borderColor: '#e2d6bc',
     padding: 16, marginTop: 10,
   },
   categoryIcon: { fontSize: 26, marginRight: 14 },
   categoryTextWrap: { flex: 1 },
-  categoryTitle: { fontSize: 19, fontWeight: '800', color: '#1f2d33' },
-  categoryCount: { fontSize: 14, color: '#66767d', marginTop: 2 },
-  chevron: { fontSize: 24, color: '#b3c2c8' },
+  categoryTitle: { fontSize: 19, fontWeight: '800', color: '#2b2118' },
+  categoryCount: { fontSize: 14, color: '#7a6f5d', marginTop: 2 },
+  chevron: { fontSize: 24, color: '#c7ba98' },
 
   topicRow: {
     flexDirection: 'row',
-    backgroundColor: '#f7fafb', borderRadius: 14,
-    borderWidth: 1, borderColor: '#d7e0e3',
+    backgroundColor: '#faf6ec', borderRadius: 14,
+    borderWidth: 1, borderColor: '#e2d6bc',
     padding: 14, marginTop: 10,
   },
   categoryIconBadge: {
     width: 40, height: 40, borderRadius: 20,
-    backgroundColor: '#e2ecf0',
+    backgroundColor: '#efe4cc',
     alignItems: 'center', justifyContent: 'center', marginRight: 12,
   },
   categoryIconText: { fontSize: 18 },
   topicInfo: { flex: 1 },
-  eraTag: { fontSize: 12, fontWeight: '700', color: '#2c5f7c', marginBottom: 2 },
-  topicTitle: { fontSize: 18, fontWeight: '800', color: '#1f2d33' },
-  topicOneLiner: { fontSize: 14, color: '#4a5a61', marginTop: 4, lineHeight: 20 },
+  eraTag: { fontSize: 12, fontWeight: '700', color: '#2f6b76', marginBottom: 2 },
+  topicTitle: { fontSize: 18, fontWeight: '800', color: '#2b2118' },
+  topicOneLiner: { fontSize: 14, color: '#5a5142', marginTop: 4, lineHeight: 20 },
 });

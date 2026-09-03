@@ -93,45 +93,45 @@ export default function HotCornerDetailScreen({ route, navigation }) {
 const s = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#eef2f4',
+    backgroundColor: '#f3ecdc',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0 },
   header: {
     flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',
     paddingHorizontal: 20, paddingTop: 12, paddingBottom: 8 },
   backBtn: { paddingVertical: 8, paddingHorizontal: 4 },
-  backText: { fontSize: 17, fontWeight: '700', color: '#2c5f7c' },
+  backText: { fontSize: 17, fontWeight: '700', color: '#a8471f' },
   listenBtn: {
-    backgroundColor: '#b8562c', borderRadius: 22,
+    backgroundColor: '#a83c32', borderRadius: 22,
     paddingVertical: 10, paddingHorizontal: 18 },
-  listenBtnActive: { backgroundColor: '#8a4020' },
-  listenText: { color: '#f7fafb', fontSize: 16, fontWeight: '700' },
+  listenBtnActive: { backgroundColor: '#7a2a23' },
+  listenText: { color: '#fff8ee', fontSize: 16, fontWeight: '700' },
 
   scroll: { padding: 24, paddingBottom: 56 },
 
-  badge: { fontSize: 15, fontWeight: '700', color: '#b8562c', marginBottom: 8 },
-  title: { fontSize: 30, fontWeight: '800', color: '#1f2d33', lineHeight: 38 },
-  director: { fontSize: 16, color: '#4a5a61', marginTop: 10 },
-  cast: { fontSize: 15, color: '#66767d', marginTop: 4, lineHeight: 22 },
+  badge: { fontSize: 15, fontWeight: '700', color: '#a83c32', marginBottom: 8 },
+  title: { fontSize: 30, fontWeight: '800', color: '#2b2118', lineHeight: 38 },
+  director: { fontSize: 16, color: '#5a5142', marginTop: 10 },
+  cast: { fontSize: 15, color: '#7a6f5d', marginTop: 4, lineHeight: 22 },
 
   introRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 10, marginTop: 18 },
-  summary: { flex: 1, fontSize: 18, color: '#1f2d33', lineHeight: 27 },
+  summary: { flex: 1, fontSize: 18, color: '#2b2118', lineHeight: 27 },
 
-  divider: { height: 1, backgroundColor: '#d7e0e3', marginVertical: 26 },
+  divider: { height: 1, backgroundColor: '#e2d6bc', marginVertical: 26 },
 
   card: {
-    backgroundColor: '#f7fafb',
+    backgroundColor: '#faf6ec',
     borderRadius: 14,
     borderWidth: 1,
-    borderColor: '#d7e0e3',
+    borderColor: '#e2d6bc',
     padding: 18,
     marginBottom: 14 },
   cardHeadRow: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 10, marginBottom: 10 },
-  cardTitle: { flex: 1, fontSize: 19, fontWeight: '800', color: '#2c5f7c' },
-  cardBody: { fontSize: 17, color: '#1f2d33', lineHeight: 26 },
+  cardTitle: { flex: 1, fontSize: 19, fontWeight: '800', color: '#a8471f' },
+  cardBody: { fontSize: 17, color: '#2b2118', lineHeight: 26 },
 
   segBtn: {
     width: 34, height: 34, borderRadius: 17,
-    backgroundColor: '#e2ecf0',
+    backgroundColor: '#efe4cc',
     alignItems: 'center', justifyContent: 'center',
     flexShrink: 0 },
   segBtnText: { fontSize: 15 } });

@@ -176,7 +176,7 @@ export default function QuizScreen({ route, navigation }) {
 const s = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#eef2f4',
+    backgroundColor: '#f3ecdc',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   header: {
@@ -184,45 +184,45 @@ const s = StyleSheet.create({
     paddingHorizontal: 20, paddingTop: 12, paddingBottom: 8,
   },
   backBtn: { paddingVertical: 8, paddingHorizontal: 4 },
-  backText: { fontSize: 16, fontWeight: '700', color: '#2c5f7c' },
-  progress: { fontSize: 16, fontWeight: '700', color: '#66767d' },
-  timer: { fontSize: 16, fontWeight: '800', color: '#3d6b4a' },
-  timerUrgent: { color: '#a8471f' },
+  backText: { fontSize: 16, fontWeight: '700', color: '#a8471f' },
+  progress: { fontSize: 16, fontWeight: '700', color: '#7a6f5d' },
+  timer: { fontSize: 16, fontWeight: '800', color: '#4a7c59' },
+  timerUrgent: { color: '#a83c32' },
 
   scroll: { padding: 24, paddingBottom: 56 },
   levelTag: {
-    alignSelf: 'flex-start', fontSize: 13, fontWeight: '700', color: '#f7fafb',
+    alignSelf: 'flex-start', fontSize: 13, fontWeight: '700', color: '#fff8ee',
     backgroundColor: '#b8912f', paddingHorizontal: 10, paddingVertical: 4, borderRadius: 10,
     marginBottom: 14, overflow: 'hidden',
   },
-  question: { fontSize: 21, fontWeight: '700', color: '#1f2d33', lineHeight: 30, marginBottom: 22 },
+  question: { fontSize: 21, fontWeight: '700', color: '#2b2118', lineHeight: 30, marginBottom: 22 },
 
   choice: {
-    backgroundColor: '#f7fafb',
+    backgroundColor: '#faf6ec',
     borderRadius: 14,
     borderWidth: 1,
-    borderColor: '#d7e0e3',
+    borderColor: '#e2d6bc',
     padding: 16,
     marginBottom: 12,
   },
-  choiceCorrect: { backgroundColor: '#3d6b4a', borderColor: '#3d6b4a' },
-  choiceWrong: { backgroundColor: '#a8471f', borderColor: '#a8471f' },
-  choiceText: { fontSize: 17, color: '#1f2d33', lineHeight: 24 },
-  choiceTextOnColor: { color: '#f7fafb', fontWeight: '600' },
+  choiceCorrect: { backgroundColor: '#4a7c59', borderColor: '#4a7c59' },
+  choiceWrong: { backgroundColor: '#a83c32', borderColor: '#a83c32' },
+  choiceText: { fontSize: 17, color: '#2b2118', lineHeight: 24 },
+  choiceTextOnColor: { color: '#fff8ee', fontWeight: '600' },
 
   explainBox: {
-    backgroundColor: '#e2ecf0',
+    backgroundColor: '#efe4cc',
     borderRadius: 14,
     padding: 18,
     marginTop: 8,
   },
-  explainLabel: { fontSize: 16, fontWeight: '800', color: '#1f2d33', marginBottom: 8 },
-  explainText: { fontSize: 16, color: '#4a5a61', lineHeight: 24 },
+  explainLabel: { fontSize: 16, fontWeight: '800', color: '#2b2118', marginBottom: 8 },
+  explainText: { fontSize: 16, color: '#5a5142', lineHeight: 24 },
 
   relatedBox: { marginTop: 14 },
-  relatedTitle: { fontSize: 15, fontWeight: '700', color: '#66767d', marginBottom: 8 },
+  relatedTitle: { fontSize: 15, fontWeight: '700', color: '#7a6f5d', marginBottom: 8 },
   relatedBtn: {
-    backgroundColor: '#f7fafb',
+    backgroundColor: '#faf6ec',
     borderRadius: 12,
     borderWidth: 1,
     borderColor: '#b8912f',
@@ -233,13 +233,13 @@ const s = StyleSheet.create({
   relatedBtnText: { fontSize: 15, fontWeight: '700', color: '#b8912f' },
 
   nextBtn: {
-    backgroundColor: '#2c5f7c', borderRadius: 14,
+    backgroundColor: '#2f6b76', borderRadius: 14,
     paddingVertical: 16, alignItems: 'center', marginTop: 20,
   },
-  nextBtnText: { color: '#f7fafb', fontSize: 17, fontWeight: '700' },
+  nextBtnText: { color: '#fff8ee', fontSize: 17, fontWeight: '700' },
 
   emptyWrap: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24 },
-  emptyText: { fontSize: 17, color: '#4a5a61', marginBottom: 16 },
-  emptyBtn: { backgroundColor: '#2c5f7c', borderRadius: 14, paddingVertical: 12, paddingHorizontal: 24 },
-  emptyBtnText: { color: '#f7fafb', fontSize: 16, fontWeight: '700' },
+  emptyText: { fontSize: 17, color: '#5a5142', marginBottom: 16 },
+  emptyBtn: { backgroundColor: '#2f6b76', borderRadius: 14, paddingVertical: 12, paddingHorizontal: 24 },
+  emptyBtnText: { color: '#fff8ee', fontSize: 16, fontWeight: '700' },
 });

@@ -81,16 +81,16 @@ export default function QuizResultScreen({ route, navigation }) {
 const s = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#eef2f4',
+    backgroundColor: '#f3ecdc',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   scroll: { padding: 24, paddingBottom: 56 },
-  badge: { fontSize: 15, fontWeight: '700', color: '#2c5f7c', marginBottom: 12 },
-  timeUpNote: { fontSize: 14, fontWeight: '700', color: '#a8471f', marginBottom: 8 },
-  scoreBig: { fontSize: 48, fontWeight: '800', color: '#1f2d33', textAlign: 'center' },
+  badge: { fontSize: 15, fontWeight: '700', color: '#2f6b76', marginBottom: 12 },
+  timeUpNote: { fontSize: 14, fontWeight: '700', color: '#a83c32', marginBottom: 8 },
+  scoreBig: { fontSize: 48, fontWeight: '800', color: '#2b2118', textAlign: 'center' },
   scorePercent: { fontSize: 20, fontWeight: '700', color: '#b8912f', textAlign: 'center', marginTop: 4, marginBottom: 28 },
 
-  sectionTitle: { fontSize: 18, fontWeight: '800', color: '#1f2d33', marginBottom: 14 },
+  sectionTitle: { fontSize: 18, fontWeight: '800', color: '#2b2118', marginBottom: 14 },
 
   resultCard: {
     borderRadius: 14,
@@ -98,15 +98,15 @@ const s = StyleSheet.create({
     padding: 16,
     marginBottom: 10,
   },
-  resultCorrect: { backgroundColor: '#eaf1ec', borderColor: '#c3d9c9' },
-  resultWrong: { backgroundColor: '#f8ece5', borderColor: '#e6c3b0' },
-  resultIndex: { fontSize: 14, fontWeight: '700', color: '#4a5a61', marginBottom: 6 },
-  resultQuestion: { fontSize: 16, color: '#1f2d33', lineHeight: 23 },
-  resultAnswer: { fontSize: 15, color: '#a8471f', marginTop: 8, fontWeight: '600' },
+  resultCorrect: { backgroundColor: '#eef4ee', borderColor: '#c7dcc9' },
+  resultWrong: { backgroundColor: '#f8ece9', borderColor: '#e6bdb3' },
+  resultIndex: { fontSize: 14, fontWeight: '700', color: '#5a5142', marginBottom: 6 },
+  resultQuestion: { fontSize: 16, color: '#2b2118', lineHeight: 23 },
+  resultAnswer: { fontSize: 15, color: '#a83c32', marginTop: 8, fontWeight: '600' },
 
   relatedRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 10 },
   relatedChip: {
-    backgroundColor: '#f7fafb',
+    backgroundColor: '#faf6ec',
     borderRadius: 10,
     borderWidth: 1,
     borderColor: '#b8912f',
@@ -116,8 +116,8 @@ const s = StyleSheet.create({
   relatedChipText: { fontSize: 13, fontWeight: '700', color: '#b8912f' },
 
   btnRow: { flexDirection: 'row', gap: 12, marginTop: 20 },
-  btnPrimary: { flex: 1, backgroundColor: '#2c5f7c', borderRadius: 14, paddingVertical: 16, alignItems: 'center' },
-  btnPrimaryText: { color: '#f7fafb', fontSize: 16, fontWeight: '700' },
-  btnSecondary: { flex: 1, backgroundColor: '#e2ecf0', borderRadius: 14, paddingVertical: 16, alignItems: 'center' },
-  btnSecondaryText: { color: '#2c5f7c', fontSize: 16, fontWeight: '700' },
+  btnPrimary: { flex: 1, backgroundColor: '#2f6b76', borderRadius: 14, paddingVertical: 16, alignItems: 'center' },
+  btnPrimaryText: { color: '#fff8ee', fontSize: 16, fontWeight: '700' },
+  btnSecondary: { flex: 1, backgroundColor: '#efe4cc', borderRadius: 14, paddingVertical: 16, alignItems: 'center' },
+  btnSecondaryText: { color: '#2f6b76', fontSize: 16, fontWeight: '700' },
 });

@@ -48,26 +48,26 @@ export default function TopicListScreen({ route, navigation }) {
 const s = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#eef2f4',
+    backgroundColor: '#f3ecdc',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0 },
   listContent: { padding: 20, paddingBottom: 48 },
 
   backBtn: { paddingVertical: 8, marginBottom: 6 },
-  backText: { fontSize: 17, fontWeight: '700', color: '#2c5f7c' },
+  backText: { fontSize: 17, fontWeight: '700', color: '#a8471f' },
 
-  title: { fontSize: 30, fontWeight: '800', color: '#1f2d33', marginTop: 4 },
-  period: { fontSize: 16, color: '#66767d', marginTop: 6, marginBottom: 20 },
+  title: { fontSize: 30, fontWeight: '800', color: '#2b2118', marginTop: 4 },
+  period: { fontSize: 16, color: '#7a6f5d', marginTop: 6, marginBottom: 20 },
 
   topicRow: {
-    backgroundColor: '#f7fafb',
+    backgroundColor: '#faf6ec',
     borderRadius: 14,
     borderWidth: 1,
-    borderColor: '#d7e0e3',
+    borderColor: '#e2d6bc',
     padding: 16,
     marginBottom: 10 },
   topicInfo: { flex: 1 },
-  eraTag: { fontSize: 12, fontWeight: '700', color: '#2c5f7c', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 2 },
+  eraTag: { fontSize: 12, fontWeight: '700', color: '#2f6b76', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 2 },
   nameRow: { flexDirection: 'row', alignItems: 'center', gap: 6, flexWrap: 'wrap' },
-  topicTitle: { fontSize: 21, fontWeight: '800', color: '#1f2d33' },
+  topicTitle: { fontSize: 21, fontWeight: '800', color: '#2b2118' },
   stars: { fontSize: 13, color: '#b8912f', letterSpacing: 1 },
-  topicOneLiner: { fontSize: 15, color: '#4a5a61', marginTop: 6, lineHeight: 21 } });
+  topicOneLiner: { fontSize: 15, color: '#5a5142', marginTop: 6, lineHeight: 21 } });
